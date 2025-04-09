@@ -1,0 +1,98 @@
+/* 全局重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 全局排版设置 */
+body,
+.content {
+  font-family: 'Microsoft YaHei', sans-serif;
+  color: #333;
+  background-color: #f5f7fa;
+  line-height: 1.6;
+}
+
+/* 主要内容容器及响应式 */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .content {
+    padding: 10px;
+  }
+}
+
+/* 卡片中标题及段落样式 */
+.el-card h2 {
+  color: #1e90ff; /* 《蔚蓝档案》蓝色 */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.el-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* 输入框和按钮的容器 */
+.input-container {
+  display: flex;
+  align-items: center; /* 垂直居中对齐 */
+  justify-content: center; /* 水平居中对齐 */
+  gap: 10px; /* 输入框和按钮之间的间距 */
+  margin: 20px 0; /* 容器的上下外边距 */
+}
+
+/* 输入框样式 */
+.input-field {
+  font-size: 14px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d3d3d3;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  width: 300px; /* 设置输入框的宽度 */
+}
+
+.input-field:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.4);
+}
+
+/* 保存按钮样式 */
+.save-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #1e90ff;
+  color: white;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.save-button:hover {
+  background-color: #005b99; /* 悬浮时变色 */
+}
+.el-message__content {
+  white-space: pre-line;
+}
