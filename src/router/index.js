@@ -9,7 +9,7 @@ import IdList from '../views/IdList.vue'
 import Character from '../views/Character.vue'
 import About from '../views/About.vue'
 import GameSetting from '../views/GameSetting.vue'
-import Command from '../views/Command.vue'
+// import Command from '../views/Command.vue'
 import ConfigMaker from '../views/ConfigMaker.vue'
 
 const routes = [
@@ -23,7 +23,7 @@ const routes = [
   { path: '/character', name: 'Character', component: Character },
   { path: '/about', name: 'About', component: About },
   { path: '/setting', name: 'GameSetting', component: GameSetting },
-  { path: '/command', name: 'Command', component: Command },
+  // { path: '/command', name: 'Command', component: Command },
   { path: '/configmaker', name: 'ConfigMaker', component: ConfigMaker },
 ]
 

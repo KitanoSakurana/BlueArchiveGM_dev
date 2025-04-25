@@ -39,9 +39,9 @@
         <el-menu-item index="/id-list" class="menu-item">
           <i class="bi bi-list-nested"></i> 获取物品列表
         </el-menu-item>
-        <el-menu-item index="/command" class="menu-item">
+        <!-- <el-menu-item index="/command" class="menu-item">
           <i class="bi bi-terminal"></i> 命令生成器
-        </el-menu-item>
+        </el-menu-item> -->
         <el-menu-item index="/configmaker" class="menu-item">
           <i class="bi bi-sliders2"></i> 配置生成器
         </el-menu-item>
